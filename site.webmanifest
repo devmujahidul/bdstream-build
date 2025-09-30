@@ -1,0 +1,151 @@
+{
+  "name": "Bdstream.site - Free Live TV Streaming for premium experience",
+  "short_name": "Bdstream",
+  "description": "Free live TV streaming for premium experience with thousands of channels. Watch live sports, news, movies, entertainment, and international channels in HD quality. Free streaming available 24/7.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1976d2",
+  "background_color": "#ffffff",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "entertainment",
+    "video",
+    "streaming",
+    "media",
+    "tv",
+    "sports",
+    "news"
+  ],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Bdstream.site Desktop View - Free Live TV Streaming for premium experience"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Bdstream.site Mobile View - Watch Live TV on Mobile"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Live Channels",
+      "short_name": "Channels",
+      "description": "Browse and watch live TV channels",
+      "url": "/channels",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Live Events",
+      "short_name": "Events",
+      "description": "Watch live sports and events",
+      "url": "/events",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Popular Shows",
+      "short_name": "Popular",
+      "description": "Discover popular TV shows and channels",
+      "url": "/channels?sort=popular",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+bdstream",
+      "url": "/channels/play/%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "video/*": [".m3u8", ".mpd", ".mp4"]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "handle_links": "preferred",
+  "capture_links": "existing-client-navigate",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "id": "bdstream-site-pwa",
+  "prefer_related_applications": false,
+  "scope_extensions": [
+    {
+      "origin": "https://bdstream.site"
+    }
+  ]
+}

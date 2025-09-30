@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bdstream.site/sitemap.xml
+
+# Disallow admin and private routes
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+
+# Allow important pages
+Allow: /channels
+Allow: /events
+Allow: /about
+Allow: /contact
+Allow: /faq
+
+# Crawl delay (optional)
+Crawl-delay: 1
